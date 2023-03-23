@@ -1,1 +1,48 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    h1 ~ p{
+      color:red;
+    }
+    div{
+      background-color: blue;
+      width:100px;
+      height: 100px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color: azure;
+      position: relative;
+      
+    }
+    div::before{
+      content:"";
+      width:10px;
+      height:10px;
+      background-color: black;
+      color: red;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      
+    }
+  </style>
+</head>
+<body>
+  <br>
+    <div>box</div>
+    <h1>Say</h1>
+    <p>Hello</p>
+    <p>World</p>
+  
+  
+  
+  
+</body>
+</html>
