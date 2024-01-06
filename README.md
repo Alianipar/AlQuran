@@ -8,8 +8,10 @@ teknologi yang saya gunakan selain html
 untuk request ke API saya menggunakan
 fetch javascript
 
-link api quran yang saya pake 
+link priview ny
+https://alsianipar.github.io/AlQuran/
 
+link api quran yang saya pake 
 https://quran-api-id.vercel.app/surahs
 
 
