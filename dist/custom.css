@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'quran';  /* Gantilah dengan nama yang Anda inginkan */
+    src: url('AlQuranAli-L3A83.ttf') format('truetype');  /* Gantilah dengan path file font TTF */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.font-quran{
+    font-family: quran;
+
+}  
+
+.text-last-right{
+    text-align-last: right;
+ }
+
+.number-icon-quran{
+    background-image: url('/dist/number-icon-quran.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 30px;
+    height: 30px;
+    user-select: none;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.card-ayahs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2px;
+    width: 100%;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+#text-ayahs{
+       text-align: justify;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    border-radius: 0.375rem;
+    justify-content: flex-end;
+    text-align-last: right;
+
+ }
+
+ #translation{
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(83, 83, 83);
+ }
