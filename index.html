@@ -263,48 +263,7 @@
 
 
 
-    <!-- <script>
-
-      const http = new XMLHttpRequest()
-      const sur=[]
-      http.open('GET','https://quran-api-id.vercel.app/surahs',true)
-
-      http.onreadystatechange =()=>{
-          if(http.readyState === 4 && http.status === 200){
-            //  for(const s of JSON.parse(http.responseText)){
-            //   console.log(s)
-            // }
-            console.log(JSON.parse(http.responseText)[0])
-
-            for(let i=0; i<8; i++){
-               sur.push(JSON.parse(http.responseText)[i])
-            }
-               
-
-            const box1 =document.querySelectorAll('.box1');
-
-            box1.forEach((e,i)=>{
-              // e.innerHTML = sur[i].name
-              const span=document.createElement('span')
-              span.classList.add('text-primary')
-              span.textContent = sur[i].number
-              e.firstElementChild.textContent = `${sur[i].name}`
-              e.firstElementChild.appendChild(span)
  
-             })
- 
-            // sur.forEach((e)=>{
-            //   console.log(e.name)
-            // })
-           }
-      }
-
-      http.send()
-  
-
-    
-      
-    </script> -->
 
  
 
