@@ -1,48 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!doctype html>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  
-  <style>
-    h1 ~ p{
-      color:red;
-    }
-    div{
-      background-color: blue;
-      width:100px;
-      height: 100px;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      color: azure;
-      position: relative;
-      
-    }
-    div::before{
-      content:"";
-      width:10px;
-      height:10px;
-      background-color: black;
-      color: red;
-      border-radius: 5px;
-      position: absolute;
-      top: 0;
-      
-    }
-  </style>
+  <link href="/dist/final.css" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/custom.css">
 </head>
 <body>
-  <br>
-    <div>box</div>
-    <h1>Say</h1>
-    <p>Hello</p>
-    <p>World</p>
+ 
+ 
+ 
+
+    <div class="main-container container p-2 relative  mx-auto   ">
+       <div id="logo" class="logo-name container cursor-pointer  flex justify-between items-center ">
+        <div class="text-logo">
+          <h1  class="text-2xl font-semibold">Al- <span class="text-primary">Quran</span> </h1>
+          <h3 class="font-mono text-[0.7rem] space-x-2 text-slate-900">From Hamba Allah</h3>
+        </div>
+       
+
+         <img class=" bg-[rgb(73,73,73)] rounded-full" width="34" height="34" src="https://img.icons8.com/external-bearicons-flat-bearicons/64/external-Quran-books-bearicons-flat-bearicons.png" alt="external-Quran-books-bearicons-flat-bearicons"/>
+       </div>
+
+       <div class="main-content container relative    p-2   ">
+         <div class="search-container flex flex-col  gap-2">
+          <div class="search-form flex justify-between border shadow-sm p-2 rounded-md gap-2">
+            <input id="input-form" placeholder="search anything" type="search" class="form-input flex-1 p-1 transition-all duration-500 focus:ring-none focus:border-none focus:outline-none focus:bg-[rgb(73,73,73)] focus:text-white rounded-md" >
+            <div class="s    ">
+              <button id="btn-form" class="bg-primary p-2 rounded-md">
+                <img src="/dist/img/icon-search.svg" alt="">
+              </button>
+            </div>
+
+          </div>
+
+     
+ 
+         
+
+
+         
+         </div>
+
+         
+ 
+         <div class="content-alquran container   grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 grid-flow-row gap-2 mt-5">
+
+          <!-- <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+             <div class="revelation text-sm font-thin text-slate-800 p-2 w-full flex flex-col justify-center items-center  ">
+                <h2>Makkiyah</h2>
+                <h3>pembukaan</h3>
+             </div>
+           </div>
+
+           <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+           </div>
+           <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+           </div>
+           <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+           </div>
+           <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+           </div>
+           <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+           </div>
+           <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+           </div>
+           <div class="box1 border shadow-sm p-2 rounded-md h-28 ">
+            <h1 class="text-title flex justify-between">
+             </h1>
+           </div> -->
+
+         
+
+            <!-- <div class="box1 h-32 p-2 bg-red-500"></div>
+            <div class="box1 h-32 p-2 bg-red-500"></div>
+            <div class="box1 h-32 p-2 bg-red-500"></div>
+            <div class="box1 h-32 p-2 bg-red-500"></div>
+            <div class="box1 h-32 p-2 bg-red-500"></div>
+            <div class="box1 h-32 p-2 bg-red-500"></div> -->
+
+
+ 
+          </div>
+
+        
+
+
+      <div class="page-content-ayahs hidden container mt-5">
+        <div class="page-title text-center  bg-primary p-2 rounded-md">
+          <h1 class=" text-white font-semibold text-xl"></h1>
+        </div>
+        <div class="page-ayahs mt-4 ">
+         <div class="bismillah text-center font-quran font-bold relative mb-4 text-[1.7em]">
+            <h1 class="tracking-[0.09em] border p-8 rounded-md"></h1>
+         </div>
+         <div class="ayahs items-end flex flex-col gap-5 font-quran     relative">
+
+          <!-- <div class="relative card-ayahs w-full flex flex-col"><span class="border relative w-full flex justify-end text-justify text-last-right p-8 rounded-md">مٰلِكِ يوْمِ الدِّيْنِۗ</span>
+            <div class="number-icon-quran">
+              <span class="text-white font-bold font-quran text-sm">4</span>
+            </div> 
+
+            </div> -->
+
+           <!-- <span class="text-justify text-last-right border flex justify-end">
+            وَاِذْ قُلْتُمْ يٰمُوْسٰى لَنْ نَّصْبِرَ عَلٰى طَعَامٍ وَّاحِدٍ فَادْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُنْۢبِتُ الْاَرْضُ مِنْۢ بَقْلِهَا وَقِثَّاۤىِٕهَا وَفُوْمِهَا وَعَدَسِهَا وَبَصَلِهَا ۗ قَالَ اَتَسْتَبْدِلُوْنَ الَّذِيْ هُوَ اَدْنٰى بِالَّذِيْ هُوَ خَيْرٌ ۗ اِهْبِطُوْا مِصْرًا فَاِنَّ لَكُمْ مَّا سَاَلْتُمْ ۗ وَضُرِبَتْ عَلَيْهِمُ الذِّلَّةُ وَالْمَسْكَنَةُ وَبَاۤءُوْ بِغَضَبٍ مِّنَ اللّٰهِ ۗ ذٰلِكَ بِاَنَّهُمْ كَانُوْا يَكْفُرُوْنَ بِاٰيٰتِ اللّٰهِ وَيَقْتُلُوْنَ النَّبِيّٖنَ بِغَيْرِ الْحَقِّ ۗ ذٰلِكَ بِمَا عَصَوْا وَّكَانُوْا يَعْتَدُوْنَ
+           </span> -->
+            
+
+           <!-- <div class="translation absolute left-0     bg-white border z-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga non commodi nostrum ipsa aut molestias, minus nemo facere reprehenderit, quam sed. Maxime magnam delectus in cum quam recusandae. Ea, architecto!
+           </div> -->
+          </div>
+        </div>
+      </div>  
+
+
+
+
+       </div>
+
+
+
+
+<!-- 
+       <div class="navigation-mobile cursor-pointer   fixed overflow-hidden bottom-1 right-0 container  transition-all duration-1000   ">
+
+        <nav class="  bg-blue-950 rounded-md p-4 ">
+      
+        </nav>
+
+       </div>  -->
+
+ 
+ 
+
+ 
+
+    </div>
+
+
+    <div class="audio-controls fixed w-full bottom-0 hidden">
+      <audio controls style="margin: auto;">
+        <source   type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>    
+    </div>
+    
+    <footer class="bg-dark pt-24 pb-12 ">
+      <div class="social-media flex flex-wrap justify-center mb-4 gap-4">
+        <a href="https://tiktok.com/@sandhika.galih" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-slate-900 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" role="img" width="25" height="25" class="fill-current" viewBox="0 0 2499.899999999999 2500">
+            <defs>
+              <radialGradient id="a" cx="332.14" cy="2511.81" r="3263.54" gradientUnits="userSpaceOnUse">
+                <stop offset=".09" stop-color="#fa8f21"></stop>
+                <stop offset=".78" stop-color="#d82d7e"></stop>
+              </radialGradient>
+              <radialGradient id="b" cx="1516.14" cy="2623.81" r="2572.12" gradientUnits="userSpaceOnUse">
+                <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
+                <stop offset="1" stop-color="#8c3aaa"></stop>
+              </radialGradient>
+            </defs>
+            <title>Instagram</title>
+            <path d="M833.4 1250c0-230.11 186.49-416.7 416.6-416.7s416.7 186.59 416.7 416.7-186.59 416.7-416.7 416.7-416.6-186.59-416.6-416.7m-225.26 0c0 354.5 287.36 641.86 641.86 641.86s641.86-287.36 641.86-641.86S1604.5 608.14 1250 608.14 608.14 895.5 608.14 1250m1159.13-667.31a150 150 0 1 0 150.06-149.94h-.06a150.07 150.07 0 0 0-150 149.94M745 2267.47c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28 7.27-505.15c5.55-121.87 26-188 43-232.13 22.72-58.36 49.78-100 93.5-143.78s85.32-70.88 143.78-93.5c44-17.16 110.26-37.46 232.13-43 131.76-6.06 171.34-7.27 505-7.27s373.28 1.31 505.15 7.27c121.87 5.55 188 26 232.13 43 58.36 22.62 100 49.78 143.78 93.5s70.78 85.42 93.5 143.78c17.16 44 37.46 110.26 43 232.13 6.06 131.87 7.27 171.34 7.27 505.15s-1.21 373.28-7.27 505.15c-5.55 121.87-25.95 188.11-43 232.13-22.72 58.36-49.78 100-93.5 143.68s-85.42 70.78-143.78 93.5c-44 17.16-110.26 37.46-232.13 43-131.76 6.06-171.34 7.27-505.15 7.27s-373.28-1.21-505-7.27M734.65 7.57c-133.07 6.06-224 27.16-303.41 58.06C349 97.54 279.38 140.35 209.81 209.81S97.54 349 65.63 431.24c-30.9 79.46-52 170.34-58.06 303.41C1.41 867.93 0 910.54 0 1250s1.41 382.07 7.57 515.35c6.06 133.08 27.16 223.95 58.06 303.41 31.91 82.19 74.62 152 144.18 221.43S349 2402.37 431.24 2434.37c79.56 30.9 170.34 52 303.41 58.06C868 2498.49 910.54 2500 1250 2500s382.07-1.41 515.35-7.57c133.08-6.06 223.95-27.16 303.41-58.06 82.19-32 151.86-74.72 221.43-144.18s112.18-139.24 144.18-221.43c30.9-79.46 52.1-170.34 58.06-303.41 6.06-133.38 7.47-175.89 7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2150.95 97.54 2068.86 65.63c-79.56-30.9-170.44-52.1-303.41-58.06C1632.17 1.51 1589.56 0 1250.1 0S868 1.41 734.65 7.57" fill="url(#a)"></path>
+            <path d="M833.4 1250c0-230.11 186.49-416.7 416.6-416.7s416.7 186.59 416.7 416.7-186.59 416.7-416.7 416.7-416.6-186.59-416.6-416.7m-225.26 0c0 354.5 287.36 641.86 641.86 641.86s641.86-287.36 641.86-641.86S1604.5 608.14 1250 608.14 608.14 895.5 608.14 1250m1159.13-667.31a150 150 0 1 0 150.06-149.94h-.06a150.07 150.07 0 0 0-150 149.94M745 2267.47c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28 7.27-505.15c5.55-121.87 26-188 43-232.13 22.72-58.36 49.78-100 93.5-143.78s85.32-70.88 143.78-93.5c44-17.16 110.26-37.46 232.13-43 131.76-6.06 171.34-7.27 505-7.27s373.28 1.31 505.15 7.27c121.87 5.55 188 26 232.13 43 58.36 22.62 100 49.78 143.78 93.5s70.78 85.42 93.5 143.78c17.16 44 37.46 110.26 43 232.13 6.06 131.87 7.27 171.34 7.27 505.15s-1.21 373.28-7.27 505.15c-5.55 121.87-25.95 188.11-43 232.13-22.72 58.36-49.78 100-93.5 143.68s-85.42 70.78-143.78 93.5c-44 17.16-110.26 37.46-232.13 43-131.76 6.06-171.34 7.27-505.15 7.27s-373.28-1.21-505-7.27M734.65 7.57c-133.07 6.06-224 27.16-303.41 58.06C349 97.54 279.38 140.35 209.81 209.81S97.54 349 65.63 431.24c-30.9 79.46-52 170.34-58.06 303.41C1.41 867.93 0 910.54 0 1250s1.41 382.07 7.57 515.35c6.06 133.08 27.16 223.95 58.06 303.41 31.91 82.19 74.62 152 144.18 221.43S349 2402.37 431.24 2434.37c79.56 30.9 170.34 52 303.41 58.06C868 2498.49 910.54 2500 1250 2500s382.07-1.41 515.35-7.57c133.08-6.06 223.95-27.16 303.41-58.06 82.19-32 151.86-74.72 221.43-144.18s112.18-139.24 144.18-221.43c30.9-79.46 52.1-170.34 58.06-303.41 6.06-133.38 7.47-175.89 7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2150.95 97.54 2068.86 65.63c-79.56-30.9-170.44-52.1-303.41-58.06C1632.17 1.51 1589.56 0 1250.1 0S868 1.41 734.65 7.57" fill="url(#b)"></path>
+          </svg>
+        </a>
+        <a href="https://tiktok.com/@sandhika.galih" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-slate-900 hover:text-white">
+          <svg role="img" width="25" height="25" class="fill-sky-600" viewBox="37.29 0 80.559 155.139" xmlns="http://www.w3.org/2000/svg">
+            <title>Facebook</title>
+            <path d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761z"></path>
+          </svg>
+        </a>
+        <a href="https://tiktok.com/@sandhika.galih" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-slate-900 hover:text-white">
+          <svg role="img" width="25" height="25" class="fill-current" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" xmlns="http://www.w3.org/2000/svg" viewBox="7.086 7.087 1277.149 924.008">
+            <title>Gmail</title>
+            <path fill="none" d="M1138.734 931.095h.283M1139.017 931.095h-.283"></path>
+            <path d="M1179.439 7.087c57.543 0 104.627 47.083 104.627 104.626v30.331l-145.36 103.833-494.873 340.894L148.96 242.419v688.676h-37.247c-57.543 0-104.627-47.082-104.627-104.625V111.742C7.086 54.198 54.17 7.115 111.713 7.115l532.12 394.525L1179.41 7.115l.029-.028z" fill="#e75a4d"></path>
+            <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#a)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <path fill="#e7e4d7" d="M148.96 242.419v688.676h989.774V245.877L643.833 586.771z"></path>
+            <path fill="#b8b7ae" d="M148.96 931.095l494.873-344.324-2.24-1.586L148.96 923.527z"></path>
+            <path fill="#b7b6ad" d="M1138.734 245.877l.283 685.218-495.184-344.324z"></path>
+            <path d="M1284.066 142.044l.17 684.51c-2.494 76.082-35.461 103.238-145.219 104.514l-.283-685.219 145.36-103.833-.028.028z" fill="#b2392f"></path>
+            <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#b)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#c)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#d)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <linearGradient id="e" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#e)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <linearGradient id="f" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#f)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#g)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <linearGradient id="h" gradientUnits="userSpaceOnUse" x1="1959.712" y1="737.107" x2="26066.213" y2="737.107" gradientTransform="matrix(.0283 0 0 -.0283 248.36 225.244)">
+              <stop offset="0" stop-color="#f8f6ef"></stop>
+              <stop offset="1" stop-color="#e7e4d6"></stop>
+            </linearGradient>
+            <path fill="url(#h)" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+            <path fill="#f7f5ed" d="M111.713 7.087l532.12 394.525L1179.439 7.087z"></path>
+          </svg>
+        </a>
+        <a href="https://tiktok.com/@sandhika.galih" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-slate-900 hover:text-white">
+          <svg width="25" height="25" viewBox="-0.003 -0.732 1172.923 1181.829" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+            <title>WhatsApp</title>
+            <path d="M308.678 1021.49l19.153 9.576a499.739 499.739 0 0 0 258.244 70.227c279.729-.638 509.563-231.016 509.563-510.744 0-135.187-53.692-265.012-149.169-360.713-95.35-96.69-225.62-151.18-361.383-151.18-278.451 0-507.552 229.133-507.552 507.552 0 2.203 0 4.373.032 6.576a523.81 523.81 0 0 0 76.612 268.14l12.768 19.153-51.074 188.337 192.806-46.925z" fill="#00E676" fill-rule="nonzero"></path>
+            <path d="M1003.29 172.378C894.597 61.482 745.49-.732 590.225 0h-.99C269.479.001 6.35 263.131 6.35 582.888c0 1.5.032 2.969.032 4.47a616.759 616.759 0 0 0 76.612 290.485L-.003 1181.097l309.32-79.804a569.202 569.202 0 0 0 278.993 70.228c320.939-1.756 584.036-266.385 583.844-587.356.766-154.213-60.044-302.52-168.864-411.787m-413.065 900.186a473.935 473.935 0 0 1-245.476-67.035l-19.153-9.577-184.187 47.883 47.882-181.953-12.768-19.153a484.242 484.242 0 0 1-72.558-254.957c0-265.65 218.599-484.25 484.25-484.25 265.65 0 484.248 218.6 484.248 484.25 0 167.269-86.666 323.11-228.781 411.372a464.838 464.838 0 0 1-251.86 73.42m280.59-354.329l-35.114-15.96s-51.075-22.346-82.996-38.306c-3.192 0-6.384-3.192-9.577-3.192a46.308 46.308 0 0 0-22.345 6.384c-6.799 3.99-3.192 3.192-47.882 54.266-3.032 5.97-9.257 9.705-15.96 9.577h-3.193a24.328 24.328 0 0 1-12.768-6.384l-15.961-6.385a309.91 309.91 0 0 1-92.573-60.65c-6.384-6.385-15.96-12.77-22.345-19.154a357.13 357.13 0 0 1-60.65-76.611l-3.193-6.384a46.475 46.475 0 0 1-6.384-12.769 23.915 23.915 0 0 1 3.192-15.96c2.905-4.789 12.769-15.962 22.345-25.538 9.577-9.576 9.577-15.96 15.961-22.345a39.33 39.33 0 0 0 6.384-31.922 1246.398 1246.398 0 0 0-51.074-121.301 37.099 37.099 0 0 0-22.345-15.961H380.82c-6.384 0-12.768 3.192-19.153 3.192l-3.192 3.192c-6.384 3.192-12.768 9.577-19.153 12.769-6.384 3.192-9.576 12.769-15.96 19.153a162.752 162.752 0 0 0-35.114 98.956 189.029 189.029 0 0 0 15.96 73.42l3.193 9.576a532.111 532.111 0 0 0 118.11 162.8l12.768 12.769a193.037 193.037 0 0 1 25.537 25.537c66.141 57.554 144.7 99.052 229.516 121.302 9.576 3.192 22.345 3.192 31.921 6.384h31.922a118.126 118.126 0 0 0 47.882-12.769c7.82-3.543 15.29-7.82 22.345-12.768l6.384-6.385c6.385-6.384 12.769-9.576 19.153-15.96a84.393 84.393 0 0 0 15.961-19.153c6.129-14.301 10.438-29.304 12.769-44.69V724.62a40.107 40.107 0 0 0-9.577-6.385" fill="#fff" fill-rule="nonzero"></path>
+          </svg>
+        </a>
+        <a href="https://tiktok.com/@sandhika.galih" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-slate-900 hover:text-white">
+          <svg width="25" height="25" viewBox="0 0 256 249" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+            <g fill="white">
+              <title>Github</title>
+              <path d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0"></path>
+              <path d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <p class="text-center text-xs font-medium text-slate-500">Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="https://instagram.com/sandhikagalih" target="_blank" class="font-bold text-primary">Almudari Sianipar</a>, menggunakan <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>. </p>
+      <div class="quran-icon text-white text-xs font-thin mt-8 w-full  text-center">
+        <a class="      "  href="https://icons8.com/icon/35KPPm27d5gu/quran">Quran</a> icon by <a href="https://icons8.com">Icons8</a>
+      </div>
+    </footer>
+
+
+
+    <!-- <script>
+
+      const http = new XMLHttpRequest()
+      const sur=[]
+      http.open('GET','https://quran-api-id.vercel.app/surahs',true)
+
+      http.onreadystatechange =()=>{
+          if(http.readyState === 4 && http.status === 200){
+            //  for(const s of JSON.parse(http.responseText)){
+            //   console.log(s)
+            // }
+            console.log(JSON.parse(http.responseText)[0])
+
+            for(let i=0; i<8; i++){
+               sur.push(JSON.parse(http.responseText)[i])
+            }
+               
+
+            const box1 =document.querySelectorAll('.box1');
+
+            box1.forEach((e,i)=>{
+              // e.innerHTML = sur[i].name
+              const span=document.createElement('span')
+              span.classList.add('text-primary')
+              span.textContent = sur[i].number
+              e.firstElementChild.textContent = `${sur[i].name}`
+              e.firstElementChild.appendChild(span)
+ 
+             })
+ 
+            // sur.forEach((e)=>{
+            //   console.log(e.name)
+            // })
+           }
+      }
+
+      http.send()
   
-  
-  
-  
+
+    
+      
+    </script> -->
+
+ 
+
+    <script src="src/js/script.js"></script>
 </body>
 </html>
