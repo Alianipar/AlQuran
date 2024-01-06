@@ -16,7 +16,7 @@
  }
 
 .number-icon-quran{
-    background-image: url('/dist/number-icon-quran.svg');
+    background-image: url('number-icon-quran.svg');
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
