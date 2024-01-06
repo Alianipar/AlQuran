@@ -1,8 +1,8 @@
 # alsianipar
 
 halo semuanya ini adalah 
-project web quran saya ketika masih 
-belajar pemrograman web
+project web quran.
+teknologi yang saya gunakan
 [html,tailwindcss ,js]
 
 saya menggunakan fetch javascript
